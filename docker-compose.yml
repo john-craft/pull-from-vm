@@ -1,0 +1,18 @@
+services:
+  openvla-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: openvla-server
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

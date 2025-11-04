@@ -1,0 +1,76 @@
+# SSH Keys and Certificates
+*.pem
+*.key
+*.pub
+*.ppk
+
+# Claude Code
+.claude/
+
+# Credentials and Secrets
+*.env
+.env.*
+*.credentials
+*credentials.json
+*.token
+secrets.yml
+secrets.yaml
+config.json
+.docker/config.json
+
+# AWS and Cloud Credentials
+.aws/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
